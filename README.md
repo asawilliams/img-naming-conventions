@@ -31,3 +31,4 @@ Examples:
  - btn_login_small_bg_left_up.png
  - icon_search_over.png
  - logo_google.png
+ - sprite_icons_navigation.png
