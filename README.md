@@ -21,11 +21,11 @@ The image could be part of a button or dialog so you could use 'btn' or 'dialog'
 A descriptive name for the specific UI created. It is a required part of the image's name. For instance, if you are creating a login button, then 'login' might be an appropriate descriptor. The descriptor may be more than one word and in that case should still be separated by a underscore.
 
 ###Size: 
-options: [ _large, normal, small_ ]
+options: [ _large, normal, small_ ]  
 If there are multiple sizes for the same type of UI then you add a size to the name.  It is unwise to use numbers to signify because those dimensions might change, but a size category is a little more flexible.
 
 ###State: 
-options: [ _up, down, over, active, focused, disabled, selected, error, warning, success_ ]
+options: [ _up, down, over, active, focused, disabled, selected, error, warning, success_ ]  
 There could possibly be more options depending on if you have custom states, but these are the most common ones.
 
 ###Position: 
