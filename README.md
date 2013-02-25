@@ -35,6 +35,8 @@ Order
 ------
 Order of the image name parts is really important.  It allows us to see the images grouped together in the filesystem that makes sense.  Without this order, parts of a button could found in different parts of the list.
 
+![File Order](/file_order.png)
+
 Examples:
 ----------
  - btn_login_small_up_left.png
