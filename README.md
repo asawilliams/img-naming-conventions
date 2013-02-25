@@ -14,7 +14,7 @@ Underscore ('_') is used because for native Android development image assets are
 The type is used incase all the assets need to be in the same folder.  This allows for all the similar purpose images to be grouped together.  It is more than likely (and it is recommended) that you will have a folder structure for these images and will probably have a similar name for the type as the containing folder.  Example, all images in the 'icons' folder will be prefixed with 'icon_'.
 
 ###Type: 
-Referrs to the element the image is trying to contruct. It is a required part of the image's name.  Being required is a little contriversal. The reason for it being required is so that designers mix using and not using it. 
+Referrs to the element the image is trying to contruct. It is a required part of the image's name.  Being required is a little contriversal. The reason for it being required is so that designers don't mix using and not using it.   
 The image could be part of a button or dialog so you could use 'btn' or 'dialog'. While you might have an icon as a part of the button, the icon could stand alone or be used in another element.  In this case you would use 'icon' instead of 'btn'.
 
 ###Descriptor:
