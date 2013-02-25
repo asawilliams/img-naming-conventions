@@ -3,7 +3,7 @@ Image Naming Conventions
 
 Intro:
 ------
-There is a need for image file naming conventions after experiencing a wide range of inconsistent naming even on the same project. The convention proposed should be usable on most types of projects (web -> native desktop).
+There is a need for image file naming conventions after experiencing a wide range of inconsistent naming even on the same project. The convention proposed should be usable on most types of projects (web -> native desktop).  This is not supposed to be a perfect convention. There will be exceptions where these rules do not fit the need.
 
 Format:
 -------
@@ -18,7 +18,7 @@ Referrs to the element the image is trying to contruct. It is a required part of
 The image could be part of a button or dialog so you could use 'btn' or 'dialog'. While you might have an icon as a part of the button, the icon could stand alone or be used in another element.  In this case you would use 'icon' instead of 'btn'.
 
 ###Descriptor:
-A descriptive name for the specific UI created. It is a required part of the image's name. For instance, if you are creating a login button, then 'login' might be an appropriate descriptor.
+A descriptive name for the specific UI created. It is a required part of the image's name. For instance, if you are creating a login button, then 'login' might be an appropriate descriptor. The descriptor may be more than one word and in that case should still be separated by a underscore.
 
 ###Size: 
 options: [ _large, normal, small_ ]
