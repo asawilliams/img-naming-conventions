@@ -3,19 +3,17 @@ Image Naming Conventions
 
 Intro:
 ------
-There is a need for image file naming conventions after experiencing a wide range of inconsistent naming even on the same project. The convention proposed should be usable on most types of projects (web -> native desktop).  This is not supposed to be a perfect convention. There will be exceptions where these rules do not fit the need.
+There is a need for image file naming conventions after experiencing a wide range of inconsistent naming even on the same project. The convention proposed should be usable on most types of projects (web -> native desktop), but the main consideration is for the web.  This is not supposed to be a perfect convention. There will be exceptions where these rules do not fit the need.
 
 Format:
 -------
-__[type*]_[descriptor*]_[size]_[state]_[position].[filetype]__
+__[type]-[descriptor*]-[size]-[state]-[position]-['sprite'].[filetype]__
 
-Underscore ('_') is used because for native Android development image assets are required to have an underscore as the delimiter.  Because we are using a delimiter we do not need to use uppercase letters to signify change in word.
-
-The type is used incase all the assets need to be in the same folder.  This allows for all the similar purpose images to be grouped together.  It is more than likely (and it is recommended) that you will have a folder structure for these images and will probably have a similar name for the type as the containing folder.  Example, all images in the 'icons' folder will be prefixed with 'icon_'.
+Dash ('-') is used for the delimitor to help with SEO considerations.  While most images are for styling purposes and do not need to be indexed; it's nice to be consistent between images that should be used for SEO and those that do not.
 
 ###Type: 
-Referrs to the element the image is trying to contruct. It is a required part of the image's name.  Being required is a little contriversal. The reason for it being required is so that designers don't mix using and not using it.   
-The image could be part of a button or dialog so you could use 'btn' or 'dialog'. While you might have an icon as a part of the button, the icon could stand alone or be used in another element.  In this case you would use 'icon' instead of 'btn'.
+Referrs to the element the image is trying to construct (icon, btn, dialog, bg, ...). This should either be used with all the images in the project or none of them.  
+There are two instances where including this can help.  If you are required to have a flat folder structure where there are no subfolders.  This helps not only specify the intent of use, but also puts all the types together when listing in alphabetical order.  The second way this can help is when a designer is sending the assets to the developer.  Sometimes it is difficult to know the intent of the asset when it is outside of a subfolder context.  Having the type can make it easier to know which subfolders the assets should go.    
 
 ###Descriptor:
 A descriptive name for the specific UI created. It is a required part of the image's name. For instance, if you are creating a login button, then 'login' might be an appropriate descriptor. The descriptor may be more than one word and in that case should still be separated by a underscore.
@@ -30,16 +28,19 @@ There could possibly be more options depending on if you have custom states, but
 
 ###Position: 
 options: [ _top, right, bottom, left, center (horizontal), middle (vertical), trcorner, tlcorner, brcorner, blcorner_ ]
+Where in the asset is used to construct the overall element.  For instance, if images are created in three parts: left, middle, and right, due to rounded corners and/or gradients then you would have image names like btn-login-left.png, btn-login-center.png, and btn-login-right.png.
+
+###Sprite:
+'-sprite', should be put at the end when the image is a sprite.
 
 Order
 ------
 Order of the image name parts is really important.  It allows us to see the images grouped together in the filesystem that makes sense.  Without this order, parts of a button could found in different parts of the list.
 
-![File Order](/file_order.png)
 
 Examples:
 ----------
- - btn_login_small_up_left.png
- - icon_search_over.png
- - logo_google.png
- - icons_navigation_sprite.png
+ - btn-login-small-up-left.png
+ - icon-search-over.png
+ - logo-google.png
+ - icons-navigation-sprite.png
