@@ -16,7 +16,7 @@ Referrs to the element the image is trying to construct (icon, btn, dialog, bg, 
 There are two instances where including this can help.  If you are required to have a flat folder structure where there are no subfolders.  This helps not only specify the intent of use, but also puts all the types together when listing in alphabetical order.  The second way this can help is when a designer is sending the assets to the developer.  Sometimes it is difficult to know the intent of the asset when it is outside of a subfolder context.  Having the type can make it easier to know which subfolders the assets should go.    
 
 ###Descriptor:
-A descriptive name for the specific UI created. It is a required part of the image's name. For instance, if you are creating a login button, then 'login' might be an appropriate descriptor. The descriptor may be more than one word and in that case should still be separated by a underscore.
+A descriptive name for the specific UI created. It is a required part of the image's name. For instance, if you are creating a login button, then 'login' might be an appropriate descriptor. The descriptor may be more than one word and in that case should still be separated by a underscore.  When naming try use the intent.  For instance, instead of icon-pencil-small-up.png, replace 'pencil' with 'edit'.  This helps if your design changes and are no longer using a pencil to signify the edit intent.  If 'pencil' was in the name you would have to change all the instances where the file name is used.
 
 ###Size: 
 options: [ _large, normal, small_ ]  
