@@ -37,10 +37,15 @@ Order
 ------
 Order of the image name parts is really important.  It allows us to see the images grouped together in the filesystem that makes sense.  Without this order, parts of a button could found in different parts of the list.
 
+Retina
+------
+When the image is X times larger (greater than 1x) than the intended display diamentions than the name of the image should have '@[x]x' at the end; where [x] should be how many times larger the image is to the displayed diamentions.  The most common is '@2x' for iOS retina images.  
+This part of the name is only needed if there is more than one size of image.  For instance, if there are only 2x images than it is not required, but if there are 1x and 2x than 2x should be labeled but not the 1x images.
+
 
 Examples:
 ----------
  - btn-login-small-up-left.png
- - icon-search-over.png
+ - icon-search-over@2x.png
  - logo-google.png
  - icons-navigation-sprite.png
