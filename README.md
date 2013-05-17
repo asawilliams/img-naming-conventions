@@ -31,7 +31,7 @@ options: [ _top, right, bottom, left, center (horizontal), middle (vertical), tr
 Where in the asset is used to construct the overall element.  For instance, if images are created in three parts: left, middle, and right, due to rounded corners and/or gradients then you would have image names like btn-login-left.png, btn-login-center.png, and btn-login-right.png.
 
 ###Sprite:
-'-sprite', should be put at the end when the image is a sprite.
+'-sprite', should be put at the end when the image is a sprite.  All images that are included in a sprite should have an underscore (_) at the beginning of the file to denote that it should not be referenced in code, but instead by its spritesheet.
 
 Order
 ------
