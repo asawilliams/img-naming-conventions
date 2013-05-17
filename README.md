@@ -49,3 +49,4 @@ Examples:
  - icon-search-over@2x.png
  - logo-google.png
  - icons-navigation-sprite.png
+ - _icon-login-up.png
